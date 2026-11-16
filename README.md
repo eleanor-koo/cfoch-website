@@ -22,7 +22,7 @@ The website uses Next.js's Pages Router. All content pages are statically genera
 
 Nature photos and available research illustrations are served locally. Six unavailable external article illustrations were removed; no scientific chart was replaced with a stock photograph. External research citations retain their original destinations and have not undergone a full editorial fact-check.
 
-Only original website photographs and the owner-supplied transparent CFOCH logo are displayed. About-section photo slots are placeholders for images Eleanor will provide. See `/photo-credits`.
+Original website photographs and the owner-supplied transparent CFOCH logo are retained. Six locally stored Unsplash photographs fill the About sections; sources and license links are recorded in `lib/data/nature-photos.json` and `/photo-credits`. No AI-generated photographs are used.
 
 ## Owner review before launch
 
@@ -51,3 +51,8 @@ Framework: Next.js. Build command: `pnpm build`. Install command: `pnpm install 
 ## November 15 owner revision
 
 Restored the original homepage summary and all six About sections on the homepage. Removed newly written marketing sections and article teasers. Preserved the numbered Field Notes artwork, which consists of CSS, text, and symbols, not generated images. Installed the supplied logo with its original transparency, trimming only empty margins. Applied the six Nature Is Yours colors with complementary logo greens. Public deployment still requires owner approval.
+
+## Green palette and photography revision
+
+Forest, sage, and green-white surfaces now unify the site; warm tones are limited to small accents. Each of the six numbered Field Notes cards has a distinct SVG illustration and shared vine detail. Six licensed woodland and coastal photos replace the About placeholders. Production build and checks of 16 pages and 71 local resources passed. Public deployment still requires owner approval.
+

@@ -7,7 +7,7 @@ interface TeamPersonProps {
 }
 export default function TeamPerson(props: TeamPersonProps) {
   return (
-    <div className="flex flex-col items-center bg-white bg-opacity-20 rounded-xl shadow-md p-5">
+    <div className="content-card team-card flex flex-col items-center p-5">
       <Image
         src={props.person.image}
         alt={props.person.name}

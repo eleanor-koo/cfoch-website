@@ -1,34 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Care for our Common Home
 
-## Getting Started
+CFOCH's environmental education website, maintained in Eleanor's repository. This copy originates from snek152/cfoch-website; the original Git history, logo, team credits, research articles, and community photographs are retained.
 
-First, run the development server:
+## Preview and development
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Use Node.js 22 or later and pnpm 10.28.2. Run `pnpm install --frozen-lockfile`, then `pnpm dev`. Open http://localhost:3000. For a production preview, run `pnpm build` then `pnpm start`.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The website uses Next.js's Pages Router. All content pages are statically generated. No application secrets or environment variables are required to build the site.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Content
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- Homepage: `pages/index.tsx`
+- Original homepage mission, beliefs, values, and goals: `components/pages/home/Organization.tsx`, displayed on the homepage and at `/about`
+- Research articles: `lib/research/*.md`
+- Article listing: `lib/data/research.ts`
+- Team archive: `lib/data/team.ts`
+- Events: `lib/data/events.tsx`
+- Donation destinations: `components/pages/donate/DonationGrid.tsx`
+- Visual system: `styles/globals.css`
+- Image provenance and unavailable original illustrations: `IMAGE-SOURCES.json`
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Nature photos and available research illustrations are served locally. Six unavailable external article illustrations were removed; no scientific chart was replaced with a stock photograph. External research citations retain their original destinations and have not undergone a full editorial fact-check.
 
-## Learn More
+Only original website photographs and the owner-supplied transparent CFOCH logo are displayed. About-section photo slots are placeholders for images Eleanor will provide. See `/photo-credits`.
 
-To learn more about Next.js, take a look at the following resources:
+## Owner review before launch
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This redesign is a preview. **Do not connect cfoch.org or replace its production deployment until Eleanor approves the design.**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- This fork belongs to `eleanor-koo`. The original site is served by Vercel, but its project ownership has not been verified.
+- To publish independently, create a hosting project in Eleanor's own account and import this repository. First deploy to a preview address. Only after approval should the domain be connected and any required DNS verification completed.
+- Confirm current team roles, volunteer form monitoring, volunteer recognition availability, and donation processor access. Team roles are labeled as an archive rather than represented as a current roster.
+- The footer no longer makes an unverified current 501(c)(3) claim. The donation page does not represent gifts as deductible while the foundation's status is unresolved. Review this wording after reinstatement.
+- The old $500 button pointed to the $100 checkout. It was removed; a correct new link is needed before adding a $500 option.
+- The $2 and $10 Stripe destinations were visually checked and showed CFOCH and their expected amounts. No payment was made. Other checkout destinations and payout routing require owner verification; browser instability prevented completing all checkout checks.
+- The volunteer form remains an external Google Form, with an Instagram fallback. No application was submitted.
 
-## Deploy on Vercel
+## Verification
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Production build: all 18 generated routes (including framework/error output).
+- Browser review of all 16 content routes at phone width: no horizontal page overflow or completed broken image loads observed.
+- Mobile menu opening and navigation/closing, gallery next button, desktop homepage, and tablet team layout checked. The team grid was corrected after a tablet overlap was found.
+- Production dependency audit: zero known advisories at verification on November 14, 2026.
+- No changes have been made to the original repository, domain records, payment settings, or cfoch.org hosting.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Deployment settings
+
+Framework: Next.js. Build command: `pnpm build`. Install command: `pnpm install --frozen-lockfile`. Use Node.js 22 or 24. Keep `pnpm-lock.yaml` and `pnpm-workspace.yaml` committed; the workspace file pins the patched PostCSS dependency.
+
+## November 15 owner revision
+
+Restored the original homepage summary and all six About sections on the homepage. Removed newly written marketing sections and article teasers. Preserved the numbered Field Notes artwork, which consists of CSS, text, and symbols, not generated images. Installed the supplied logo with its original transparency, trimming only empty margins. Applied the six Nature Is Yours colors with complementary logo greens. Public deployment still requires owner approval.

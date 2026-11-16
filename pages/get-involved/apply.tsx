@@ -1,20 +1,3 @@
-import Page from "@lib/types/Page";
-import { GetServerSideProps } from "next";
-
-const ApplyPage: Page = () => {
-  return <></>;
-};
-
-ApplyPage.title = "Apply";
-
-export const getServerSideProps: GetServerSideProps = async () => {
-  return {
-    redirect: {
-      destination:
-        "https://docs.google.com/forms/d/e/1FAIpQLSczJyYB7LDMGgFm_6gDusCvSqLjBUmOCGENQkE_hmcqwbcg3A/viewform",
-      permanent: true,
-    },
-  };
-};
-
-export default ApplyPage;
+import Banner from "@components/layout/Banner";import Page from "@lib/types/Page";
+const Apply:Page=()=> <><Banner title="Join Us"/><section className="wrap narrow section-space"><a className="action" href="https://docs.google.com/forms/d/e/1FAIpQLSczJyYB7LDMGgFm_6gDusCvSqLjBUmOCGENQkE_hmcqwbcg3A/viewform" target="_blank" rel="noopener noreferrer">Open the volunteer interest form ↗</a><p className="form-note">The form opens in Google Forms. If it is unavailable, reach us through <a href="https://www.instagram.com/care_for_our_common_home/">our Instagram profile</a>.</p></section></>;
+Apply.title="Volunteer";export default Apply;

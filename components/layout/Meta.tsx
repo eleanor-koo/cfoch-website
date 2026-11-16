@@ -14,7 +14,7 @@ export default function Meta(props: MetaProps) {
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="description" content={description} />
       <meta property="og:type" content="website" />
-      <meta property="og:image" content="/images/ms-icon-310x310.png" />
+      <meta property="og:image" content="https://www.cfoch.org/images/cfoch-logo.png" />
       <meta
         name="og:title"
         property="og:title"

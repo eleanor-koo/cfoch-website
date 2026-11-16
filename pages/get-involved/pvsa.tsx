@@ -1,20 +1,3 @@
-import Page from "@lib/types/Page";
-import { GetServerSideProps } from "next";
-
-const PVSAPage: Page = () => {
-  return <></>;
-};
-
-PVSAPage.title = "PVSA";
-
-export const getServerSideProps: GetServerSideProps = async () => {
-  return {
-    redirect: {
-      destination:
-        "https://docs.google.com/forms/d/e/1FAIpQLScT6oIynD2ddnhQvBQgJ-NV6S9D_abDiK9JUW4TQ6FeDU9Mnw/viewform?usp=sf_link",
-      permanent: true,
-    },
-  };
-};
-
-export default PVSAPage;
+import Banner from "@components/layout/Banner";import Page from "@lib/types/Page";
+const Recognition:Page=()=> <><Banner title="Volunteer recognition"/><section className="wrap narrow section-space"><h2>Your time makes a difference.</h2><p className="lead">CFOCH has previously participated in the President’s Volunteer Service Award program. Please contact us to confirm current program availability and eligibility before submitting hours or planning around an award.</p><a className="action" href="https://www.instagram.com/care_for_our_common_home/" target="_blank" rel="noopener noreferrer">Ask about volunteer recognition ↗</a></section></>;
+Recognition.title="Volunteer recognition";export default Recognition;

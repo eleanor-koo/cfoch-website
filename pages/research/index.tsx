@@ -7,7 +7,7 @@ const Research: Page = () => {
   return (
     <>
       <Banner title="Research" />
-      <ArticleGrid research={research} />
+      <p className="wrap page-intro">Ideas and perspectives from our student writers. Articles retain their original publication dates and sources.</p><ArticleGrid research={research} />
     </>
   );
 };

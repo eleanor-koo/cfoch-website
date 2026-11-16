@@ -1,6 +1,6 @@
 import navLinks from "@lib/data/navLinks";
 import Link from "next/link";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { useMemo } from "react";
 
 interface LinkPageProps {
@@ -22,7 +22,7 @@ export default function LinkPage(props: LinkPageProps) {
         </h1>
         <div className="flex sm:flex-row flex-col justify-center gap-3 overflow-hidden items-center px-2 w-full py-5 max-w-[100rem] sm:px-6 lg:px-6 mx-auto">
           {links.map((l) => (
-            <Link href={l.href} key={l.name}>
+            <Link legacyBehavior href={l.href} key={l.name}>
               <a
                 className="text-black px-7 py-6 bg-light hover:bg-opacity-100 text-3xl sm:text-4xl rounded-lg bg-opacity-80 sm:hover:rounded-xl sm:hover:-translate-y-2 sm:transition-all sm:duration-300 shadow-lg w-full h-full sm:h-36 flex flex-col justify-center items-center"
                 {...l.customProps}

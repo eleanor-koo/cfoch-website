@@ -1,56 +1,6 @@
-import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/outline";
-import { homepageCarouselImages } from "@lib/data/images";
-import Image from "next/image";
-import { useEffect, useState } from "react";
-import { useSpringCarousel } from "react-spring-carousel";
-import { Header } from "./Header";
-
-export default function Summary() {
-  const withSlide = (fn: () => void) => {
-    return () => {
-      setReset((r) => !r);
-      fn();
-    };
-  };
-  const { carouselFragment, slideToNextItem, slideToPrevItem } =
-    useSpringCarousel({
-      withLoop: true,
-      items: homepageCarouselImages.map((i) => ({
-        id: i,
-        renderItem: (
-          <Image
-            src={i}
-            alt="Carousel image"
-            layout="fill"
-            loading="eager"
-            quality={100}
-            objectFit="cover"
-            className="select-none"
-            draggable={false}
-          />
-        ),
-      })),
-    });
-
-  const [reset, setReset] = useState(false);
-
-  // useEffect(() => {
-  //   setInterval(() => {
-  //     slideToNextItem();
-  //   }, 5000);
-
-  //   return () => {
-  //     clearInterval(undefined);
-  //   };
-  // }, [slideToNextItem, reset]);
-
-  return (
-    <div className="p-10 space-y-2 padded-section">
-      <Header>Summary</Header>
-      <div className="w-full flex flex-col gap-5 overflow-hidden">
-        <div className="grid place-items-center">
-          <p className="text-xl font-light">
-            Welcome to Care for our Common Home Foundation (CFOCH), a private,
+import {useState} from "react";
+const photos=[['/carousel/image1.jpeg','Volunteers collecting litter in the neighborhood'],['/carousel/image3.jpeg','Volunteers with bags of collected litter'],['/carousel/image4.png','A student speaking at an environmental protest'],['/carousel/image2.png','Speakers in an online environmental conversation'],['/carousel/image5.jpeg','A conversation from the CFOCH community archive'],['/carousel/image6.jpeg','A moment from the CFOCH community archive']];
+export default function Summary(){const [index,setIndex]=useState(0);return <section id="summary" className="community wrap section-space" aria-label="Community photo gallery"><div><h2>Summary</h2><p>Welcome to Care for our Common Home Foundation (CFOCH), a private,
             nonprofit organization headquartered in San Jose, California. We are
             committed to journeying with youth to create a platform for
             promoting environmental and social innovations, aiming to uphold
@@ -60,25 +10,4 @@ export default function Summary() {
             responsibility, regardless of age, to create a hope-filled future.
             We are run completely by student volunteers and believe that
             everyone, regardless of age, can make contributions and strive to
-            improve our common home.
-          </p>
-        </div>
-        <div className="relative overflow-hidden bg-white rounded-xl cursor-grab active:cursor-grabbing shadow-md h-[50rem]">
-          <button
-            className="absolute h-full top-0 bottom-0 left-0 z-[1] flex items-center justify-center sm:w-[10%] w-[15%] p-0 text-white text-center bg-none border-0"
-            onClick={withSlide(slideToPrevItem)}
-          >
-            <ChevronLeftIcon className="w-9 h-9 p-1" />
-          </button>
-          {carouselFragment}
-          <button
-            className="absolute h-full top-0 bottom-0 right-0 z-[1] flex items-center justify-center sm:w-[10%] w-[15%] p-0 text-white text-center bg-none border-0"
-            onClick={withSlide(slideToNextItem)}
-          >
-            <ChevronRightIcon className="w-9 h-9 p-1" />
-          </button>
-        </div>
-      </div>
-    </div>
-  );
-}
+            improve our common home.</p><div className="gallery-controls"><button aria-label="Previous community photo" onClick={()=>setIndex((index+photos.length-1)%photos.length)}>←</button><span aria-live="polite">{index+1} / {photos.length}</span><button aria-label="Next community photo" onClick={()=>setIndex((index+1)%photos.length)}>→</button></div></div><figure><img src={photos[index][0]} alt={photos[index][1]} loading="lazy"/><figcaption>{photos[index][1]}</figcaption></figure></section>}

@@ -11,7 +11,7 @@ interface ButtonProps {
 
 export default function Button(props: ButtonProps) {
   return props.href ? (
-    <Link href={props.href}>
+    <Link legacyBehavior href={props.href}>
       <a
         className={`${
           props.className || ""

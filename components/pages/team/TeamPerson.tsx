@@ -1,5 +1,5 @@
 import Person from "@lib/types/Person";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { Fragment } from "react";
 
 interface TeamPersonProps {
@@ -11,14 +11,14 @@ export default function TeamPerson(props: TeamPersonProps) {
       <Image
         src={props.person.image}
         alt={props.person.name}
-        height={250}
-        width={250}
+        height={220}
+        width={220}
         className="object-center object-cover rounded-full"
         layout="fixed"
       />
-      <h1 className="text-4xl mt-3 font-display font-bold">
+      <h2 className="text-2xl text-center mt-3 font-display font-bold">
         {props.person.name}
-      </h1>
+      </h2>
       <p className="text-xl text-center">
         {props.person.roles.map((r, i) =>
           i === props.person.roles.length - 1 ? (

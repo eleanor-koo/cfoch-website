@@ -15,7 +15,6 @@ author: "Claire Wang"
 
 Did you know that it can take 2700 liters of water just to make a cotton T-shirt and 3781 liters of water to make a pair of jeans? This is because cotton is an extremely drought intolerant plant. Cotton also only takes up 2.5% of agricultural land but accounts for 16% of pesticides and 6.8% of herbicides used in the world. These chemicals heavily damage the environment and harm the soil. Not to mention, the earth is incapable of absorbing the number of clothes that are made and thrown away every year. It is estimated that about 99% of used clothes end up being in a landfill, where they may be burnt.
 
-![Image of flowers](https://i0.wp.com/TheNewFashionNorm.com/wp-content/uploads/2015/10/organic-cotton.jpg)
 
 Evidently, clothes are very capable of harming the environment. However, there are ways to dress and shop that will reduce the impact your habits have on the environment, including using organic cotton and recycled fabric, and reducing how often you buy clothes.
 
@@ -25,7 +24,9 @@ Recycled fabric is fabric made of previous scraps of cotton or other material. T
 
 To make recycled fabric, pieces of fabric are first sorted into colors. Then, each group of color is shredded into small fibers and then spun back. The quality of recycled fabric is not as good as normal fabric or cotton because the length of fibers are shortened and it is not very uniform. This means that clothes, unfortunately, cannot be recycled an infinite amount of times.
 
-![Fabric](<https://assets.website-files.com/5d26d80e8836af2d12ed1269/5ef61b8167fae9cc37482662_5e69efd3f5771c7d1a8505c3_Copy%20of%20Circle%20Economy-5-min%20(2)-min.jpg>)
+![Fabric](/research/how-to-dress-sustainably-2.webp)
+
+[Image source](https://assets.website-files.com/5d26d80e8836af2d12ed1269/5ef61b8167fae9cc37482662_5e69efd3f5771c7d1a8505c3_Copy%20of%20Circle%20Economy-5-min%20(2)-min.jpg)
 
 However, recycled fabric overall is still an excellent option because it reduces the amount of water and pesticide used and prevents clothes from winding up in landfills. It also does not require any dyes or animals, like sheep, to produce cloth.
 

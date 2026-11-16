@@ -1,24 +1,9 @@
-import Summary from "@components/pages/home/Summary";
+import Link from "next/link";
 import Hero from "@components/pages/home/Hero";
-import Page from "@lib/types/Page";
-import Buttons from "@components/pages/home/Buttons";
-import Preview from "@components/pages/home/Preview";
+import Summary from "@components/pages/home/Summary";
 import Organization from "@components/pages/home/Organization";
-import Embed from "@components/pages/media/Embed";
-
-const Home: Page = () => {
-  return (
-    <>
-      <Hero />
-      <Summary />
-      <Buttons />
-      <Organization />
-      <Embed />
-      <Preview />
-    </>
-  );
-};
-
-Home.title = "Home";
-
-export default Home;
+import ArticleGrid from "@components/pages/research/ArticleGrid";
+import research from "@lib/data/research";
+import Page from "@lib/types/Page";
+const Home:Page=()=> <><Hero/><Summary/><div className="home-actions wrap"><Link className="action" href="/get-involved/apply">Get Involved ↗</Link><Link className="action action-earth" href="/events">Events ↗</Link><Link className="action action-light" href="/get-involved/donate">Donate ↗</Link></div><div id="about"><Organization/></div><div className="wrap social-link"><a className="text-link" href="https://www.instagram.com/care_for_our_common_home/" target="_blank" rel="noopener noreferrer">Instagram ↗</a></div><section className="research-section section-space"><div className="wrap section-heading"><div><p className="eyebrow">OUR RESEARCH</p><h2>From our student writers.</h2></div><Link className="text-link" href="/research">See more ↗</Link></div><ArticleGrid research={research.slice(0,3)}/></section></>;
+Home.title="Home";export default Home;

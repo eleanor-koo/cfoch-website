@@ -6,7 +6,7 @@ const Team: Page = () => {
   return (
     <>
       <Banner title="Our Team" />
-      <TeamGrid />
+      <p className="wrap page-intro">Meet the people who helped build CFOCH. Roles below reflect our original website team.</p><TeamGrid />
     </>
   );
 };

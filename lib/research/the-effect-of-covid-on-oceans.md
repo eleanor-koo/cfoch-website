@@ -20,7 +20,6 @@ One of the things that is improving is a slowdown in fisheries. In the U.S., ⅔
 
 However, once countries see that the market is suffering, they may open more fisheries to help, thus reversing the improvements.
 
-![People using fishing nets](https://lh3.googleusercontent.com/QsFIjgqF1BPKDS95y52mhkgTGA4MnvA8zuNYNJ2ZuXbZ_fCOJxWi5IpJNybx2VH0EZHHb_9Lj63DYYGXYnUgDWAG1izrKeZnp2w1FsQv1-JgiKyVdiOdYZ9dkuuIcGurGA=w1280)
 
 Another positive change is a reduction in CO2 emissions, though this mainly applies for the first part of 2020, where there was a 9% drop in CO2 emissions. This may seem a lot, but Nicole Lovenduski, associate professor of atmospheric and oceanic sciences and director of the Ocean Biogeochemistry Research Group at the Institute of Arctic and Alpine Research, has researched that ocean acidification has barely been reduced.
 
@@ -28,7 +27,9 @@ Ocean acidification is when the ocean absorbs a large amount of greenhouse gases
 
 Unfortunately, even if the reduction of greenhouse gases emitted in the first half of 2020 was multiplied by four, the difference would still not be enough to see a major change in the acidity of the ocean. So, while it is good to celebrate the drop in emissions, it shows that a lot more needs to be done.
 
-![CO2 Graph](https://econofact.org/wp-content/uploads/2020/08/Haleco2WEB.png)
+![CO2 Graph](/research/the-effect-of-covid-on-oceans-2.webp)
+
+[Image source](https://econofact.org/wp-content/uploads/2020/08/Haleco2WEB.png)
 
 You can see that they have dropped slightly, but it is still significantly more than 1960 levels.
 

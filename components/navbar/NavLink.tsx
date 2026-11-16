@@ -16,7 +16,7 @@ export default function NavLink(props: NavLinkProps) {
         router.pathname === props.href ? "font-bold" : ""
       } text-base`}
     >
-      <Link href={props.href}>
+      <Link legacyBehavior href={props.href}>
         <a className={`${props.className || ""}`}>{props.children}</a>
       </Link>
     </li>

@@ -1,0 +1,9 @@
+const symbols = [
+  <g key="cotton"><path d="M60 100V60M60 79C37 79 29 67 30 58C48 58 58 66 60 79ZM60 91C82 91 92 78 91 69C74 70 64 77 60 91Z"/><path d="M60 60C43 72 26 61 29 47C14 33 31 16 44 23C48 5 72 5 76 23C91 15 107 34 91 47C94 61 77 72 60 60Z"/></g>,
+  <g key="water"><path d="M60 10C48 29 25 47 25 69A35 35 0 0 0 95 69C95 47 72 29 60 10Z"/><path d="M36 73Q48 63 60 73T84 73"/><circle cx="44" cy="53" r="3"/><circle cx="66" cy="48" r="3"/><circle cx="75" cy="88" r="3"/><circle cx="50" cy="87" r="3"/></g>,
+  <g key="ice"><path d="M60 9V111M16 35L104 85M16 85L104 35M45 19L60 34L75 19M45 101L60 86L75 101M20 52L40 49L37 29M83 91L80 71L100 68M20 68L40 71L37 91M83 29L80 49L100 52"/></g>,
+  <g key="ocean"><path d="M14 75Q29 59 44 75T74 75T104 75M14 93Q29 77 44 93T74 93T104 93M34 54A26 26 0 0 1 86 54M60 10V3M25 22L19 16M95 22L101 16"/></g>,
+  <g key="habitat"><path d="M17 60Q48 21 88 60Q48 99 17 60ZM88 60L109 39V81Z"/><circle cx="37" cy="56" r="3"/></g>,
+  <g key="carbon"><path d="M26 39A41 41 0 0 1 100 47M100 47L102 26M100 47L80 41M94 82A41 41 0 0 1 20 73M20 73L18 94M20 73L40 79M44 81C27 56 43 36 79 33C79 65 68 83 44 81ZM43 82L70 44"/></g>
+];
+export default function FieldNoteArt({index}:{index:number}){return <div className={`article-art art-${index}`} aria-hidden="true"><svg className="field-note-symbol" viewBox="0 0 120 120" fill="none" stroke="currentColor" strokeWidth="2.3" strokeLinecap="round" strokeLinejoin="round">{symbols[index]}</svg><svg className="field-note-vine" viewBox="0 0 360 70" fill="none" stroke="currentColor" strokeWidth="1.3"><path d="M-8 66C53 17 96 83 159 43S281 51 372 10"/><path d="M60 46Q47 17 30 28Q39 46 60 46ZM99 54Q113 30 130 39Q119 57 99 54ZM163 41Q151 15 137 20Q142 40 163 41ZM229 35Q239 10 258 16Q249 36 229 35ZM290 30Q276 5 263 11Q267 30 290 30Z"/></svg><small>FIELD NOTES / {String(index+1).padStart(2,'0')}</small></div>}

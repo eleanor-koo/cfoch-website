@@ -11,7 +11,9 @@ sources:
 author: "Claire Wang"
 ---
 
-![A lake with no fish](https://i2.wp.com/www.circleofblue.org/wp-content/uploads/2014/09/DianchiLakeAlgae.jpg?fit=640%2C429&ssl=1)
+![A lake with no fish](/research/dead-zones-1.webp)
+
+[Image source](https://i2.wp.com/www.circleofblue.org/wp-content/uploads/2014/09/DianchiLakeAlgae.jpg?fit=640%2C429&ssl=1)
 
 ## What are Dead Zones and How do They Form?
 
@@ -33,7 +35,9 @@ In total, there are around 415 dead zones around the world, and their numbers ha
 
 The largest dead zone in the world is in the Baltic Sea and is caused by overfishing of Baltic Cod. Cods are a predator of sprats, an organism that eats zooplankton, and zooplankton consume algae. When the cod population declines, the sprat population increases, making zooplankton numbers to go down, and this causes an algal bloom that leads to hypoxia.
 
-![Location of various dead zones](https://robertscribbler.files.wordpress.com/2015/05/coastal-dead-zones-no-fish-left.jpg)
+![Location of various dead zones](/research/dead-zones-2.webp)
+
+[Image source](https://robertscribbler.files.wordpress.com/2015/05/coastal-dead-zones-no-fish-left.jpg)
 
 ## What can people do to help?
 

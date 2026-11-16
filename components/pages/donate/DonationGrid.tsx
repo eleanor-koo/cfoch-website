@@ -31,11 +31,6 @@ const donationLinks: DonationLink[] = [
     type: "one-time",
   },
   {
-    amount: 500,
-    link: "https://buy.stripe.com/aEU9BL8jqdVt9b2007",
-    type: "one-time",
-  },
-  {
     amount: 10,
     link: "https://buy.stripe.com/14k9BL9nu04D9b25km",
     type: "recurring",
@@ -44,16 +39,16 @@ const donationLinks: DonationLink[] = [
 
 export default function DonationGrid() {
   return (
-    <div className="py-5">
-      <h1 className="text-center text-2xl sm:text-4xl font-bold font-display">
+    <div className="donation-options wrap section-space">
+      <h2 className="text-center text-2xl sm:text-4xl font-bold font-display">
         One-Time Donations
-      </h1>
-      <div className="flex sm:flex-row flex-col justify-center gap-3 overflow-hidden items-center px-2 w-full py-5 max-w-[100rem] sm:px-6 lg:px-6 mx-auto">
+      </h2>
+      <div className="donation-grid">
         {donationLinks
           .filter((l) => l.type === "one-time")
           .map((l) => (
             <a
-              className="text-black px-7 py-6 bg-dark hover:bg-opacity-100 text-3xl sm:text-4xl rounded-lg bg-opacity-80 sm:hover:rounded-xl sm:hover:-translate-y-2 sm:transition-all sm:duration-300 shadow-lg w-full h-full sm:h-36 flex flex-col justify-center items-center"
+              className="donation-option"
               href={l.link}
               key={l.amount}
               target="_blank"
@@ -63,15 +58,15 @@ export default function DonationGrid() {
             </a>
           ))}
       </div>
-      <h1 className="text-center text-2xl sm:text-4xl font-bold font-display">
+      <h2 className="text-center text-2xl sm:text-4xl font-bold font-display">
         Recurring Donations
-      </h1>
-      <div className="flex sm:flex-row flex-col justify-center gap-3 overflow-hidden items-center px-2 w-full py-5 max-w-[100rem] sm:px-6 lg:px-6 mx-auto">
+      </h2>
+      <div className="donation-grid">
         {donationLinks
           .filter((l) => l.type === "recurring")
           .map((l) => (
             <a
-              className="text-black px-7 py-6 bg-dark hover:bg-opacity-100 text-3xl sm:text-4xl rounded-lg bg-opacity-80 sm:hover:rounded-xl sm:hover:-translate-y-2 sm:transition-all sm:duration-300 shadow-lg w-full h-full sm:h-36 flex flex-col justify-center items-center"
+              className="donation-option"
               key={l.amount}
               href={l.link}
               target="_blank"

@@ -5,6 +5,7 @@ import { join } from "path";
 import matter from "gray-matter";
 import { remark } from "remark";
 import remarkHtml from "remark-html";
+import Head from "next/head";
 import Banner from "@components/layout/Banner";
 
 interface ResearchData {
@@ -20,7 +21,7 @@ const ResearchArticle: Page<{
 }> = ({ data, content }) => {
   return (
     <>
-      <Banner title={data.title} />
+      <Head><title>{data.title} | CFOCH</title></Head><Banner title={data.title} />
       <div className="prose max-w-[100ch] lg:prose-lg prose-stone mx-auto px-2 py-5 sm:px-6 lg:px-8">
         <h2>{data.date}</h2>
         <h3>Written by {data.author}</h3>

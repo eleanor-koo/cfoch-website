@@ -8,9 +8,9 @@ interface EventGridProps {
 export default function EventGrid(props: EventGridProps) {
   return (
     <div className="px-10 py-5 padded-section">
-      <h1 className="text-3xl font-bold font-display text-center">
+      <h2 className="text-3xl font-bold font-display text-center">
         {props.title}
-      </h1>
+      </h2>
       {props.events.length !== 0 ? (
         <div
           className={`grid place-items-start mt-2 gap-5 ${
@@ -22,7 +22,7 @@ export default function EventGrid(props: EventGridProps) {
           {props.events.map((event) => {
             return (
               <div
-                className="bg-darkgreen w-full text-white shadow-md flex justify-center items-center h-full flex-col gap-2 p-5 rounded-xl"
+                className="content-card event-card w-full flex justify-center items-center h-full flex-col gap-2 p-5"
                 key={event.name}
               >
                 <h2 className="text-2xl text-center font-display">
@@ -39,7 +39,7 @@ export default function EventGrid(props: EventGridProps) {
         </div>
       ) : (
         <p className="italic text-center pt-2">
-          No events here! Check back later.
+          No upcoming events are announced yet. Follow our Instagram for updates.
         </p>
       )}
     </div>

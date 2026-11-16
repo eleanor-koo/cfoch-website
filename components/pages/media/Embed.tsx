@@ -1,9 +1,1 @@
-import { InstagramEmbed } from "react-social-media-embed";
-
-export default function Embed() {
-  return (
-    <div className="p-5">
-      <InstagramEmbed url="https://instagram.com/care_for_our_common_home" />
-    </div>
-  );
-}
+export default function Embed(){return <p className="wrap page-intro"><a className="text-link" href="https://www.instagram.com/care_for_our_common_home/" target="_blank" rel="noopener noreferrer">Follow CFOCH on Instagram ↗</a></p>}

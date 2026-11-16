@@ -1,11 +1,11 @@
 import Section from "../organization/Section";
+import Link from "next/link";
 
 export default function Organization() {
   return (
     <>
       <Section
         side="left"
-        image="https://source.unsplash.com/random/?nature"
         title="Our Mission"
       >
         Research shows that although students take many courses on environmental
@@ -23,7 +23,6 @@ export default function Organization() {
       </Section>
       <Section
         side="right"
-        image="https://source.unsplash.com/random/?globe"
         title="Our Name"
       >
         The name of our foundation comes from the subtitle to Pope Francis{"'"}s
@@ -33,7 +32,7 @@ export default function Organization() {
         care for the world of nature. To learn more about his ethical analysis
         and our values, we encourage everyone to read the book or watch this{" "}
         <a
-          href="https://theletterfilm.org/Watch/?eType=EmailBlastContent&eId=af060cab-cf93-44e8-b152-07b3b9ce50c2&fbclid=IwAR1yeKTWLnNUJuYDpiPREdgrpbBIaEPmqDFOc8cM3hDK054d-uI-J_j9UiQ"
+          href="https://theletterfilm.org/Watch/"
           target="_blank"
           rel="noreferrer noopener"
           className="text-blue-500 underline"
@@ -44,7 +43,6 @@ export default function Organization() {
       </Section>
       <Section
         side="left"
-        image="https://source.unsplash.com/random/?moral"
         title="Our Beliefs"
       >
         <ul className="list-disc">
@@ -90,7 +88,6 @@ export default function Organization() {
       </Section>
       <Section
         side="right"
-        image="https://source.unsplash.com/random/?teamwork"
         title="Our Values"
       >
         <ul className="list-disc">
@@ -125,7 +122,6 @@ export default function Organization() {
       </Section>
       <Section
         side="left"
-        image="https://source.unsplash.com/random/?achievement"
         title="Our Goals"
       >
         <ul className="list-disc">
@@ -151,7 +147,6 @@ export default function Organization() {
       </Section>
       <Section
         side="right"
-        image="https://source.unsplash.com/random/?help"
         title="How You Can Help"
       >
         <ul>
@@ -186,8 +181,7 @@ export default function Organization() {
           </li>
           <li>Reduce the use of plastics</li>
         </ul>
-        Care for our Common Home Foundation is a certifying organization of the
-        President{"'"}s Volunteer Service Award.
+        For questions about volunteer recognition, see our <Link href="/get-involved/pvsa">volunteer recognition page</Link>.
       </Section>
     </>
   );

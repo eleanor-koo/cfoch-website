@@ -10,7 +10,7 @@ export default function Preview() {
       <Header>
         Our Research
         <br />
-        <Link href="/research">
+        <Link legacyBehavior href="/research">
           <a className="text-base font-sans font-normal underline hover:text-blue-600">
             See More
           </a>

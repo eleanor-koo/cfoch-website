@@ -5,7 +5,7 @@ import { forwardRef, ReactNode } from "react";
 
 const MyLink = forwardRef(function L({ href, children, ...rest }: any, ref) {
   return (
-    <Link href={href}>
+    <Link legacyBehavior href={href}>
       <a ref={ref} {...rest}>
         {children}
       </a>

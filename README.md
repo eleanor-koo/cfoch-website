@@ -26,7 +26,7 @@ Original website photographs and the owner-supplied transparent CFOCH logo are r
 
 ## Owner review before launch
 
-This redesign is a preview. **Do not connect cfoch.org or replace its production deployment until Eleanor approves the design.**
+Eleanor approved publication after the final fish illustration and prominent automatic carousel revisions. Hosting and domain cutover remain pending; do not change DNS before the new deployment is ready.
 
 - This fork belongs to `eleanor-koo`. The original site is served by Vercel, but its project ownership has not been verified.
 - To publish independently, create a hosting project in Eleanor's own account and import this repository. First deploy to a preview address. Only after approval should the domain be connected and any required DNS verification completed.
@@ -50,9 +50,14 @@ Framework: Next.js. Build command: `pnpm build`. Install command: `pnpm install 
 
 ## November 15 owner revision
 
-Restored the original homepage summary and all six About sections on the homepage. Removed newly written marketing sections and article teasers. Preserved the numbered Field Notes artwork, which consists of CSS, text, and symbols, not generated images. Installed the supplied logo with its original transparency, trimming only empty margins. Applied the six Nature Is Yours colors with complementary logo greens. Public deployment still requires owner approval.
+Restored the original homepage summary and all six About sections on the homepage. Removed newly written marketing sections and article teasers. Preserved the numbered Field Notes artwork, which consists of CSS, text, and symbols, not generated images. Installed the supplied logo with its original transparency, trimming only empty margins. Applied the six Nature Is Yours colors with complementary logo greens. Publication approved; hosting setup pending.
 
 ## Green palette and photography revision
 
-Forest, sage, and green-white surfaces now unify the site; warm tones are limited to small accents. Each of the six numbered Field Notes cards has a distinct SVG illustration and shared vine detail. Six licensed woodland and coastal photos replace the About placeholders. Production build and checks of 16 pages and 71 local resources passed. Public deployment still requires owner approval.
+Forest, sage, and green-white surfaces now unify the site; warm tones are limited to small accents. Each of the six numbered Field Notes cards has a distinct SVG illustration and shared vine detail. Six licensed woodland and coastal photos replace the About placeholders. Production build and checks of 16 pages and 71 local resources passed. Publication approved; hosting setup pending.
+
+
+## Final approved revision
+
+Simplified Dead Zones to a fish outline. Moved the community carousel immediately below a compact title banner and above the summary. Automatic advance runs every six seconds, pauses on hover/focus and hidden tabs, and respects reduced-motion settings. Manual navigation and a play/pause control remain available. Production build and 16-page/71-resource checks passed; automatic slide advancement verified in the browser.
 

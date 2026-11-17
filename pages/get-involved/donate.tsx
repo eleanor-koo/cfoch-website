@@ -6,7 +6,7 @@ const Donate: Page = () => {
   return (
     <>
       <Banner title="Donate" />
-      <div className="wrap donation-intro"><p className="lead">Support environmental education and a community of young people who care.</p><p>Federal tax-exempt status is being reviewed. We are not representing contributions as tax-deductible at this time.</p></div>
+      <div className="wrap donation-intro"><p className="lead">Support environmental education and a community of young people who care.</p><p>Care for our Common Home Foundation is a nonprofit, tax-exempt charitable organization under Section 501(c)(3) of the Internal Revenue Code (EIN 86-2868869). Donations are tax-deductible as allowed by law.</p></div>
       <DonationGrid />
     </>
   );

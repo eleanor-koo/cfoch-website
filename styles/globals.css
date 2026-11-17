@@ -81,3 +81,11 @@
 .community-carousel .gallery-controls button{width:40px;height:40px;font-size:1.3rem;background:#284d3cdd;border:0}
 .community-summary{margin-top:48px}
 @media(max-width:760px){.home-hero .hero-content{padding:26px 0 22px}.hero-content h1{font-size:clamp(1.65rem,6.6vw,2.5rem)}.foundation-label{font-size:.63rem;margin-top:9px}.community-carousel{width:calc(100% - 32px);margin-top:4px}.community .community-slide{height:clamp(220px,38svh,340px)}.community-carousel .gallery-controls{padding:0}.community-carousel .gallery-controls button{width:34px;height:34px}.community-summary{margin-top:36px}}
+
+/* Consistent photo height, including the lower-resolution fourth slide. */
+.community-carousel{width:min(1120px,calc(100% - 64px))}
+.community .community-slide{height:clamp(320px,59svh,540px)}
+.community .community-slide img{height:100%;width:auto;max-height:100%;max-width:100%;object-fit:contain}
+.footer-top .logo-credit{font-size:.78rem;margin-top:16px;color:#43594c}
+@media(max-width:760px){.community-carousel{width:calc(100% - 32px)}.community .community-slide{height:min(46svh,calc((100vw - 32px)*.5625))}}
+.about-photo img[src="/nature/desert-dunes.jpg"]{object-position:center 72%}

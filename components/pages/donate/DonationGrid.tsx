@@ -4,7 +4,7 @@ type DonationLink = {
   type: "one-time" | "recurring";
 };
 
-const donationLinks: DonationLink[] = [
+export const donationLinks: DonationLink[] = [
   {
     amount: 2,
     link: "https://buy.stripe.com/7sIeW543adVtdri7sv",

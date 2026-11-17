@@ -38,3 +38,27 @@
 .community-summary{max-width:860px;text-align:center;margin:56px auto 0}
 .community .community-summary p{max-width:none;margin:24px auto 0}
 @media(max-width:760px){.hero-content{padding-block:24px}.hero-content h1{font-size:2.5rem}.hero-content h1 br{display:block}.community{padding-top:18px}.community .community-slide{height:clamp(250px,43vh,400px)}.community-summary{margin-top:40px}.community-carousel .gallery-controls{gap:14px}}
+
+/* Photo-led opening: full viewport with only directional controls. */
+.community{padding:0 0 64px;width:100%;margin:0}
+.community-carousel{position:relative;width:100%;max-width:none;margin:0;background:var(--forest)}
+.community .community-slide{position:relative;height:calc(100svh - 92px);min-height:480px;max-height:1100px;background:var(--forest)}
+.carousel-frame{position:absolute;inset:0;opacity:0;transition:opacity 1.4s ease;pointer-events:none}
+.carousel-frame.is-active{opacity:1}
+.community .community-slide img{width:100%;height:100%;object-fit:cover;object-position:center;display:block;background:var(--forest)}
+.community-carousel .gallery-controls{position:absolute;inset:0;margin:0;padding:0 32px;display:flex;justify-content:space-between;align-items:center;pointer-events:none}
+.community-carousel .gallery-controls button{pointer-events:auto;width:54px;height:54px;border:1px solid #ffffff80;color:white;background:#17372e80;font-size:1.6rem;backdrop-filter:blur(6px)}
+.community-carousel .gallery-controls button:hover{background:var(--forest)}
+.community-summary{max-width:860px;margin:72px auto 0;text-align:center}
+.about-photo.canopy-photo img{height:auto;aspect-ratio:3/2;object-fit:contain}
+.home-donate{background:var(--forest);color:var(--paper)}
+.home-donate-layout{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.home-donate .eyebrow,.home-donate h2 em{color:#dcebc2}
+.home-donate h2{margin-bottom:24px}.home-donate h3{font-size:1.6rem;margin-bottom:24px}
+.home-donate p{max-width:430px}.home-donation-options{display:flex;flex-wrap:wrap;gap:12px}
+.home-donation-options a{display:flex;align-items:center;justify-content:center;min-width:72px;flex:1;padding:18px 14px;border:1px solid #dcebc280;color:#f6f8f3;font-size:1.4rem;transition:background .2s}
+.home-donation-options a:hover{background:#dcebc2;color:var(--forest)}
+.home-donate .text-link{color:#dcebc2}.donation-checkout-note{font-size:.82rem;margin:14px 0 25px;color:#dce7d3}
+.home-donate .donation-status-note{font-size:.78rem;line-height:1.55;margin-top:28px;color:#dce7d3;max-width:none}
+@media(max-width:760px){.community .community-slide{height:calc(100svh - 76px);min-height:460px}.community-carousel .gallery-controls{padding:0 16px}.community-carousel .gallery-controls button{width:44px;height:44px}.community-summary{margin-top:48px}.home-donate-layout{grid-template-columns:1fr;gap:36px}.home-donation-options a{min-width:70px}.about-photo.canopy-photo img{height:auto}}
+@media(prefers-reduced-motion:reduce){.carousel-frame{transition:none}}

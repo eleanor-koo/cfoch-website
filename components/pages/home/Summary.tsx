@@ -1,5 +1,5 @@
 import {useEffect, useState} from "react";
-const photos=[['/carousel/image1.jpeg','Volunteers collecting litter in the neighborhood'],['/carousel/image3.jpeg','Volunteers with bags of collected litter'],['/carousel/image4.png','A student speaking at an environmental protest'],['/carousel/image2.png','Speakers in an online environmental conversation'],['/carousel/image5.jpeg','A conversation from the CFOCH community archive'],['/carousel/image6.jpeg','A moment from the CFOCH community archive']];
+const photos=[['/carousel/image3.jpeg','Volunteers with bags of collected litter'],['/carousel/image1.jpeg','Volunteers collecting litter in the neighborhood'],['/carousel/image4.png','A student speaking at an environmental protest'],['/carousel/image2.png','Speakers in an online environmental conversation'],['/carousel/image5.jpeg','A conversation from the CFOCH community archive'],['/carousel/image6.jpeg','A moment from the CFOCH community archive']];
 export default function Summary(){
   const [index,setIndex]=useState(0);
   const [motion,setMotion]=useState(false);
@@ -22,7 +22,7 @@ export default function Summary(){
   },[rotating,index]);
   function step(direction:number){setIndex(current=>(current+direction+photos.length)%photos.length);}
   return <section id="summary" className="community" aria-label="CFOCH community">
-    <h1 className="sr-only">Care for our Common Home</h1>
+    
     <div className="community-carousel" role="region" aria-roledescription="carousel" aria-label="Community photo gallery"
       onFocusCapture={()=>setFocused(true)} onBlurCapture={event=>{if(!event.currentTarget.contains(event.relatedTarget as Node|null))setFocused(false);}}>
       <div className="community-slide" aria-live={rotating?'off':'polite'} aria-atomic="true">

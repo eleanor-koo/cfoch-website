@@ -62,3 +62,8 @@
 .home-donate .donation-status-note{font-size:.78rem;line-height:1.55;margin-top:28px;color:#dce7d3;max-width:none}
 @media(max-width:760px){.community .community-slide{height:calc(100svh - 76px);min-height:460px}.community-carousel .gallery-controls{padding:0 16px}.community-carousel .gallery-controls button{width:44px;height:44px}.community-summary{margin-top:48px}.home-donate-layout{grid-template-columns:1fr;gap:36px}.home-donation-options a{min-width:70px}.about-photo.canopy-photo img{height:auto}}
 @media(prefers-reduced-motion:reduce){.carousel-frame{transition:none}}
+
+/* Compact name banner followed by an edge-to-edge community gallery. */
+.community .community-slide{height:68svh;min-height:360px;max-height:760px}
+.community-carousel,.community .community-slide,.carousel-frame,.community .community-slide img{border:0;border-radius:0;box-shadow:none}
+@media(max-width:760px){.community .community-slide{height:58svh;min-height:300px;max-height:560px}}

@@ -89,3 +89,5 @@
 .footer-top .logo-credit{font-size:.78rem;margin-top:16px;color:#43594c}
 @media(max-width:760px){.community-carousel{width:calc(100% - 32px)}.community .community-slide{height:min(46svh,calc((100vw - 32px)*.5625))}}
 .about-photo img[src="/nature/desert-dunes.jpg"]{object-position:center 72%}
+
+.link-arrow{font-family:Arial,'Segoe UI Symbol',sans-serif;font-variant-emoji:text;display:inline-block;font-size:1em;line-height:1;white-space:nowrap}.recognition-copy p{margin:24px 0;line-height:1.8}.contact-divider{margin-inline:12px}.art-0 .field-note-symbol{width:112px;height:112px;top:12px}.art-0 .field-note-vine{height:58px;bottom:-6px}

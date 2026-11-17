@@ -26,7 +26,7 @@ export default function Organization() {
         title="Our Name"
       >
         The name of our foundation comes from the subtitle to Pope Francis{"'"}s
-        encyclical Laudato Si{"'"}, “on care for our common home”. In it, the
+        encyclical Laudato Si{"'"}, “On Care for Our Common Home”. In it, the
         Pope makes a statement on how climate change is real and calls all
         people of the world to take {'"'}swift and unified global action{'"'} to
         care for the world of nature. To learn more about his ethical analysis

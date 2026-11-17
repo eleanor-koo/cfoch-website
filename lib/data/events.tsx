@@ -15,9 +15,7 @@ const events: CEvent[] = [
     description: (
       <>
         All photos taken by{" "}
-        <Link href="https://instagram.com/srutielangovanphoto">
-          Sruti Elangovan
-        </Link>{" "}
+        Sruti Elangovan{" "}
         on May 18, 2022
       </>
     ),
